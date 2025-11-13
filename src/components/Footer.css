@@ -1,0 +1,98 @@
+.footer {
+  background-color: #ffffff; /* white background */
+  color: #000000; /* black text */
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Logo */
+.footer-logo img {
+  height: 160px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #000000; /* black */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #555555; /* lighter black on hover */
+}
+
+/* Payment Icons */
+.footer-payments {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.payment-icon {
+  font-size: 1.8rem;
+  color: #000000; /* black */
+  transition: color 0.3s ease;
+}
+
+.payment-icon:hover {
+  color: #555555;
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: #000000; /* black */
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+  color: #555555; /* lighter black hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #000000; /* black */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-logo img {
+    height: 120px;
+  }
+}

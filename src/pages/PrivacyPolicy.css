@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* ===== Base Styles ===== */
+body {
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Page Wrapper ===== */
+.privacy-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  scroll-behavior: smooth;
+  margin-top: 40px;
+}
+
+/* ===== Inner Container ===== */
+.privacy-container {
+  background-color: #fff;
+  padding: 50px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
+  color: #222;
+}
+
+/* ===== Title ===== */
+.privacy-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* ===== Sections ===== */
+.privacy-section {
+  margin-bottom: 35px;
+}
+
+.privacy-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 12px;
+  border-left: 4px solid #000;
+  padding-left: 10px;
+}
+
+.privacy-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ===== Bullet List ===== */
+.privacy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.privacy-list li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* ===== Contact List ===== */
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 20px 0;
+}
+
+.contact-list li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.contact-list a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* ===== Footer Note ===== */
+.last-text {
+  text-align: center;
+  font-style: italic;
+  color: #000;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 30px 20px;
+  }
+
+  .privacy-title {
+    font-size: 1.6rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .privacy-section p,
+  .privacy-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-title {
+    font-size: 1.4rem;
+  }
+
+  .privacy-section p,
+  .privacy-list li {
+    font-size: 0.9rem;
+  }
+}

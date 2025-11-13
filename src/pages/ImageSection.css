@@ -1,0 +1,59 @@
+/* Remove all margins and paddings from page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container fills entire screen */
+.linen-gallery {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+}
+
+/* Each image container takes half screen on desktop */
+.linen-image-container {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image fills entire area perfectly */
+.linen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Black overlay for dark opacity effect */
+.linen-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35); /* adjust transparency (0.35 = soft dark tone) */
+  pointer-events: none; /* lets image remain non-interactive */
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .linen-gallery {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .linen-image-container {
+    width: 100%;
+    height: 50vh; /* each takes half screen vertically */
+  }
+
+  .linen-image-container::after {
+    background: rgba(0, 0, 0, 0.4); /* slightly darker on small screens */
+  }
+}

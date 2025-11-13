@@ -1,0 +1,132 @@
+/* Main Section */
+.signup-section {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card Container */
+.signup-container {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+/* Logo */
+.logo-container img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.signup-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Subtext */
+.signup-subtext {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+.form-group input:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 3px rgba(98,0,0,0.1);
+  background: #fff;
+}
+
+/* Button */
+.signup-btn {
+  background: #333;
+  color: #fff;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(98,0,0,0.2);
+}
+
+/* Footer */
+.signup-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-footer a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .signup-container {
+    padding: 30px 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .signup-subtext {
+    font-size: 0.9rem;
+  }
+
+  .signup-btn {
+    font-size: 0.95rem;
+  }
+}

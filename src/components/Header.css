@@ -1,0 +1,41 @@
+.header-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+/* Common video style */
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  display: block;
+  background: black;
+  /* border: 2px solid red;  */
+}
+
+/* Show desktop by default */
+.desktop-video {
+  display: block;
+}
+
+/* Hide mobile by default */
+.mobile-video {
+  display: none;
+}
+
+/* Swap for mobile view */
+@media (max-width: 900px) {
+  .desktop-video {
+    display: none;
+  }
+  .mobile-video {
+    display: block;
+  }
+}
